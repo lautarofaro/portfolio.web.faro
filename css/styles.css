@@ -80,3 +80,34 @@ footer {
    font-size: 18px;
    line-height: 1.6;
 }
+
+/* Estilo del titulo de la seccion "Galeria" */
+
+.gallery {
+   text-align: center;
+   padding: 80px 20px;
+}
+
+.gallery h2 {
+   font-size: 32px;
+   margin-bottom: 40px;
+}
+
+/* Sistema -Grid- para la "Galeria" */
+
+.gallery-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   max-width: 1000px;
+   margin: auto;
+}
+
+/* Ajusta las imagenes de la "Galeria" */
+
+.gallery-grid img {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 8px;
+}
