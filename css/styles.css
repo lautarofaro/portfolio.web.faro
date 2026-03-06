@@ -27,9 +27,11 @@ footer {
    padding:30px;
 }
 
+/* Seccion: Portada de la pagina web */ 
+
 .hero {
    height: 100vh;
-   background-image: url("img/image1.jpg");
+   background-image: url("../img/image1.jpg");    /* imagen de portada principal */
    background-size: cover;
    background-position: center;
    display: flex;
@@ -58,4 +60,23 @@ footer {
    font-size: 24px;
    margin-top: 10px;
    letter-spacing: 5px;
+}
+
+/* Seccion: Introduccion de la pagina web */
+
+.intro {
+   text-align: center;
+   padding: 80px 20px;
+}
+
+.intro h2 {
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+
+.intro p {
+   max-width: 600px;
+   margin: auto;
+   font-size: 18px;
+   line-height: 1.6;
 }
