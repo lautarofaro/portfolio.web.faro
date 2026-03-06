@@ -26,3 +26,19 @@ footer {
    text-align:center;
    padding:30px;
 }
+
+.hero {
+   height: 100vh;
+   background-image: url("img/image1.jpg");
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-texto {
+   background:rgba(0,0,0,0.4);
+   padding:40px;
+   border-radius:10px;
+}
