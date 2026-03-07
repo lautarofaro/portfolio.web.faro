@@ -31,7 +31,7 @@ footer {
 
 .hero {
    height: 100vh;
-   background-image: url("../img/image1.jpg");    /* imagen de portada principal */
+   background-image: url("../img/image0.jpg");    /* imagen de portada principal */
    background-size: cover;
    background-position: center;
    display: flex;
