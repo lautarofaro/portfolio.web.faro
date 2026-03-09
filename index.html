@@ -68,35 +68,45 @@
 
    <section class="gallery" id="galeria"> <!-- Seccion donde va a estar la galeria de fotos -->
 
-      <h2>Galería</h2>
+   <h2>Galería</h2>
 
-      <div class="gallery-grid">
+   <div class="filtros">
 
-         <a href="img/image1.jpg">
-            <img src="img/image1.jpg" alt="Foto de paisaje">
-         </a>
+      <button onclick="filtrar('all')">Todo</button>
+      <button onclick="filtrar('retrato')">Retratos</button>
+      <button onclick="filtrar('evento')">Eventos</button>
+      <button onclick="filtrar('paisaje')">Paisajes</button>
 
-         <a href="img/image2.jpg">
-            <img src="img/image2.jpg" alt="Foto de paisaje">
-         </a>
+   </div>
 
-         <a href="img/image3.jpg">
-            <img src="img/image3.jpg" alt="Foto de paisaje">
-         </a>
 
-         <a href="img/image4.jpg">
-            <img src="img/image4.jpg" alt="Foto de paisaje">
-         </a>
+   <div class="gallery-grid">
 
-         <a href="img/image5.jpg">
-            <img src="img/image5.jpg" alt="Foto de paisaje">
-         </a>
+      <a href="img/image1.jpg" data-lightbox="galeria" class="foto paisaje">
+         <img src="img/image1.jpg" alt="">
+      </a>
 
-         <a href="img/image6.jpg">
-            <img src="img/image6.jpg" alt="Foto de paisaje">
-         </a>
+      <a href="img/image2.jpg" data-lightbox="galeria" class="foto retrato">
+         <img src="img/image2.jpg" alt="">
+      </a>
 
-      </div>
+      <a href="img/image3.jpg" data-lightbox="galeria" class="foto retrato">
+         <img src="img/image3.jpg" alt="">
+      </a>
+
+      <a href="img/image4.jpg" data-lightbox="galeria" class="foto paisaje">
+         <img src="img/image4.jpg" alt="">
+      </a>
+
+      <a href="img/image5.jpg" data-lightbox="galeria" class="foto paisaje">
+         <img src="img/image5.jpg" alt="">
+      </a>
+
+      <a href="img/image6.jpg" data-lightbox="galeria" class="foto paisaje">
+         <img src="img/image6.jpg" alt="">
+      </a>
+
+   </div>
 
    </section>
 
@@ -151,6 +161,33 @@
    <p>© 2026 Lautaro Faró</p>
 
    </footer>
+
+
+   <!-- JAVASCRIPT -->
+   
+   <script>
+
+   function filtrar(categoria) {
+
+      let fotos = document.querySelectorAll(".foto");
+
+      fotos.forEach(function(foto) {
+
+         if(categoria === "all") {
+            foto.style.display = "block";
+         }
+         else if(foto.classList.contains(categoria)) {
+            foto.style.display = "block";
+         }
+         else {
+            foto.style.display = "none";
+         }
+
+      });
+
+   }
+
+   </script>
 
 </body>
 
