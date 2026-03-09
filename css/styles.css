@@ -12,14 +12,27 @@ body {
 /* HEADER */
 
 header {
-   text-align: center;
-   padding: 20px;
+   /* text-align: center;
+   padding: 20px; */
+   padding:20px 40px;
    position: sticky;
    top: 0;
    background: white;
    z-index: 1000;
    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
    /* border-bottom: 5px solid red; */
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo h1 {
+   margin: 0;              /* elimina espacio innecesario */
+   font-size: 28px;        /* tamaño de la fuente */
+   letter-spacing: 2px;    /* espacio entre letras */
 }
 
 header p {
@@ -33,15 +46,19 @@ header p {
 /* MENU DE NAVEGACION - ENLACES */ 
 
 nav a {
-   margin:0 15px;
+   /* margin:0 15px; */
+   margin-left: 25px;
    text-decoration:none;
    color:black;
-   font-weight:bold;
+   /* font-weight:bold; */
+   font-weight: 500;
+   font-size: 16px;
    transition: color 0.3s;
 }
 
 nav a:hover {
    color: #2f7f9a;
+   opacity: 0.6;
 }
 
 
@@ -151,6 +168,7 @@ footer {
    object-fit: cover;
    border-radius: 6px;
    transition: transform 0.4s ease; /* Efecto Hover */
+   transition: all 0.4s ease;
 }
 
 
