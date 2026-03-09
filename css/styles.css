@@ -1,12 +1,20 @@
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    margin:0;
    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-   text-align:center;
-   padding:40px;
+   text-align: center;
+   padding: 20px;
+   position: sticky;
+   top: 0;
+   background: white;
+   z-index: 1000;
 }
 
 nav a {
@@ -26,6 +34,7 @@ footer {
    text-align:center;
    padding:30px;
 }
+
 
 /* Seccion: Portada de la pagina web */ 
 
@@ -62,6 +71,7 @@ footer {
    letter-spacing: 5px;
 }
 
+
 /* Seccion: Introduccion de la pagina web */
 
 .intro {
@@ -81,6 +91,7 @@ footer {
    line-height: 1.6;
 }
 
+
 /* Estilo del titulo de la seccion "Galeria" */
 
 .gallery {
@@ -93,6 +104,7 @@ footer {
    margin-bottom: 40px;
 }
 
+
 /* Sistema -Grid- para la "Galeria" */
 
 .gallery-grid {
@@ -102,6 +114,7 @@ footer {
    max-width: 1000px;
    margin: auto;
 }
+
 
 /* Ajusta las imagenes de la "Galeria" */
 
@@ -113,11 +126,13 @@ footer {
    transition: transform 0.3s ease; /* efecto hover */
 }
 
+
 /* Efecto Hover en la Galería */
 
 .gallery-grid img:hover {
    transform: scale(1.05);
 }
+
 
 /* Responsive para Tablet */
 
@@ -139,6 +154,7 @@ footer {
 
 }
 
+
 /* Sobre Mi: Diseño */
 
 .about {
@@ -158,6 +174,7 @@ footer {
    line-height: 1.6;
    margin-bottom: 20px;
 }
+
 
 /* Contacto: Diseño */
 
