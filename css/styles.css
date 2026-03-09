@@ -22,18 +22,30 @@ header {
    /* border-bottom: 5px solid red; */
 }
 
+
+/* MENU DE NAVEGACION - ENLACES */ 
+
 nav a {
    margin:0 15px;
    text-decoration:none;
    color:black;
    font-weight:bold;
+   transition: color 0.3s;
 }
+
+nav a:hover {
+   color: #2f7f9a;
+}
+
 
 .hero {
    text-align:center;
    padding:80px 20px;
    background:#f2f2f2;
 }
+
+
+/* PIE DE PAGINA */
 
 footer {
    text-align:center;
