@@ -165,7 +165,7 @@
    </footer>
 
 
-   <!-- JAVASCRIPT -->
+   <!-- JAVASCRIPT ~ Filtro de categorias para Galeria -->
    
    <script>
 
@@ -188,6 +188,18 @@
       });
 
    }
+
+   </script>
+
+   <!-- JAVASCRIPT ~ Parallax -->
+   
+   <script>
+
+      window.addEventListener("scroll", function() {                          // "Escucha" cuando el usuario hace scroll en la página
+         const heroBg = document.querySelector(".hero-bg");                   // Selecciona la imagen de fondo del hero
+         let scrollPos = window.scrollY;                                      // Obtiene cuántos píxeles se movió el scroll desde arriba
+         heroBg.style.transform = "translateY(" + scrollPos * 0.3 + "px)";    // Mueve la imagen verticalmente a una velocidad más lenta que el scroll (0.3), creando el efecto parallax
+      });
 
    </script>
 
