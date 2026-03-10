@@ -79,27 +79,46 @@ footer {
 
 /* PORTADA - ENCABEZADO */ 
 
-.hero {
-   height: 100vh;
-   background-image:
+.hero {                                                           /* Hero: seccion principal al inicio de la pagina */
+   position: relative;                                            /* Define la posición del contenedor como relativa. */
+   height: 100vh;                                                 /* vh: altura de la ventana, pj: 100vh: el hero ocupa el 100% de la ventana */
+   overflow: hidden;
+
+   background-image:                                              /* imagen de portada principal */
       linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-      url("../img/image0.jpg");                                   /* imagen de portada principal */
+      url("../img/image0.jpg");
+}
+
+.hero-bg {                                                        /* Hero Background ("imagen de fondo") */
+   width: 100%;                                                   /* Hace que la imagen ocupe todo el ancho del contenedor */
+   height: 100%;                                                  /* Hace que la imagen ocupe toda la altura del contenedor */
+
+   object-fit: cover;                                             /* Escala la imagen para llenar el contenedor manteniendo la proporción */
+
    background-size: cover;
    background-position: center;
+
+   position: absolute;                                            /* Posiciona la imagen absolutamente dentro del contenedor (.hero), lo que permite superponer texto encima */
+   top: 0;
+   left: 0;
+   z-index: -1;                                                   /* Envía la imagen detrás de los demás elementos (como el texto), para que el contenido quede visible sobre ella */
+   
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
-.hero-texto {
+.hero-text {
+   position: relative;
+   text-align: center;
+   color: rgba(203, 21, 1, 0.648);
+   top: 10%;
+   transform: translateY(-20%);
    background:rgba(0,0,0,0.4);
    padding:40px;
    border-radius:10px;
-}
-
-.hero-text {
-   text-align: center;
-   color: rgba(203, 21, 1, 0.648);
+   
+   
 }
 
 .hero-text h1 {
